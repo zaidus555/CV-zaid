@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv zaid</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(0, 85, 159);
+        }
+        header {
+            background-color: aquamarine;
+            color: black;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        nav {
+            background-color: rgb(130, 211, 245);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 2, 8);
+        }
+
+        .container {
+            width: 1000px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        
+        .left {
+            flex: 1;
+        }
+        .right {
+            flex: 3;
+        }
+    }
+
+        .card {
+            padding: 20px;
+            background-color: rgb(255, 240, 241);
+            margin: 0 0 20px 10px;
+            box-shadow: 0px -10px #091624;
+            border-radius: 10px;
+        }
+
+        .profil {
+            text-align: center;
+        }
+        .profil img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .skill-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .skill {
+                flex: 1;
+                border-radius: 10px;
+                background-color: aquamarine;
+                padding: 20px;
+                margin: 5px;
+                text-align: center;
+
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+    @media (max-width: 786px) {
+        .container {
+            width: 100%;
+        
+        .left {
+            flex: 1;
+        }
+        .right {
+            flex: 1;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Curriculum Vitae</h1>
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="#"> Profil</a></li>
+            <li><a href="#"> Portofolio</a></li>
+            <li><a href="#"> Contact</a></li>
+        </ul>
+    </nav>  
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <div class="card">
+                    <div class="profil">
+                        <img src="profil.jpeg" alt="Profil">
+                        <h2> muhammad zaidus sukron</h2>
+                        <h3> mahasiswa</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2> Skill </h2>
+                    <ul>
+                        <li>bertani </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="card">
+                    <h2> riwayat penddidikan </h2>
+                    <ul>
+                        <li> mts nu mojosari</li>
+                        <li> smk al-basthomi</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2> pengalaman kerja </h2>
+                    <ul>
+                        <li> beternak</li>
+                        <li>berkebun</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2> keahlian </h2>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <img src="tani.png" alt="">
+                            
+                    </div>
+                    <div class="skill">
+                        <img src="js1.png" alt="">
+                    </div>
+                    <div class="skill">
+                        <img src="sapi.jpg" alt="">
+                    </div>
+                    <div class="skill">
+                        <img src="cs.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
